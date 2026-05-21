@@ -1,0 +1,116 @@
+/* --- KEEP YOUR HEADINGS AS THEY ARE --- */
+h1 {
+  font-family: "Elms Sans", sans-serif;
+  display: inline;
+  font-weight: bold;
+  font-size: 5vw;
+}
+
+h2 {
+  font-family: "Elms Sans", sans-serif;
+  font-weight: bold;
+  font-size: 2vw;
+}
+
+/* --- BUTTONS --- */
+a {
+  font-family: "Elms Sans", sans-serif;
+  font-weight: bold;
+  color: darkslategray;
+  text-decoration-line: none;
+  padding: 5px 10px; /* Slight extra horizontal padding looks cleaner */
+  background-color: lightgray;
+  border: 2px solid black;
+  border-radius: 8px;
+  filter: drop-shadow(3px 3px 4px rgba(0, 0, 0, 0.3)); /* Fixed: drop-shadow needs color context */
+  transition: color 0.2s ease;
+  font-size: 1.75vw;
+}
+
+a:hover {
+  color: rgb(1, 110, 110);
+  border: 2px solid rgb(1, 71, 71);
+  background-color: rgb(218, 216, 216);
+  /* Fixed: drop-shadow only takes 3 values + color. Normal box-shadow takes 4. */
+  filter: drop-shadow(3px 6px 6px rgba(0, 0, 0, 0.4)); 
+}
+
+/* --- HEADER FIXES --- */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  gap: 2vw; /* Prevents text and logo from crashing into each other */
+  margin-bottom: 4vh; /* Gives separation between header and body container */
+}
+
+/* Give the logo explicit sizing constraints */
+.logo {
+  display: flex;
+  justify-content: center;
+  flex-shrink: 1; /* Allows the logo container to shrink if needed */
+}
+
+.logo img {
+  width: 10vw;       /* Fluid width based on screen size */
+  max-width: 120px;  /* Desktop upper cap limit */
+  min-width: 50px;   /* Mobile lower cap limit so it never gets tiny */
+  height: auto;
+}
+
+/* Group your button elements to sit nicely together */
+.Buttons {
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+}
+
+/* --- CONTAINER & TEXT --- */
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Aligns text top with the image top */
+  gap: 5%;
+}
+
+/* Ensures your profile picture stays perfectly responsive */
+.container > img {
+  width: 50%;
+  height: auto;
+}
+
+p {
+  font-family: "Elms Sans", sans-serif;
+  display: inline;
+  font-weight: normal;
+  font-size: 1.25vw;
+}
+
+.text {
+  width: 45%;
+}
+
+/* --- PAGE STRUCTURING --- */
+html {
+  padding-left: 10%;
+  padding-right: 10%;
+  box-sizing: border-box;
+}
+
+/* Best practice: Apply layout heights to body, not html */
+body {
+  margin: 0;
+  padding-top: 20px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* --- CLEANED UP MISC RULES --- */
+.mail {
+  display: inline;
+}
+
+/* Note: 'display' cannot accept a text string like an email address. 
+   If you want to show the email on hover, we would use JavaScript or a tooltip tool! */

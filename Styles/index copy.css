@@ -1,0 +1,78 @@
+h1 {font-family: "Elms Sans", sans-serif;
+display: inline;
+font-weight: bold;
+font-size:5vw /* was 64 pt before*/
+}
+
+h2 {font-family: "Elms Sans", sans-serif;
+font-weight: bold;
+font-size:2vw /* was 24 pt before*/
+}
+
+
+a {font-family: "Elms Sans", sans-serif;
+font-weight: bold;
+color: darkslategray;
+text-decoration-line: none;
+padding: 5px 5px 5px 5px;
+background-color: lightgray;
+border: 2px solid black;
+border-radius: 8px;
+filter: drop-shadow(3px 3px 4px);
+transition: color 0.2s ease; /* Optional: adds a smooth transition when leaving the hover */
+font-size:1.75vw /* was 24 pt before*/
+}
+
+
+.Buttons {
+  display: flex;
+  gap: 0.5vw;
+  align-items: center;
+}
+
+.header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.container {
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+p {font-family: "Elms Sans", sans-serif;
+display: inline;
+font-weight: normal;
+font-size:1.25vw /* was 16 pt before*/
+}
+
+.text{width: 45%;}
+
+html {padding-left: 10%; padding-right: 10%; height: 100vh; text-align: justify;}
+
+body{height: 100vh;}
+
+
+/* Define the text color for the hover state, do not add the transition here, otherwise the effect will have a delay and this feels bad */
+a:hover {
+  color: rgb(1, 110, 110);
+  border: 2px solid rgb(1, 71, 71);
+  background-color: rgb(218, 216, 216);
+  filter: drop-shadow(3px 6px 6px 8px);
+}
+
+.mail.hover {
+    display: "robin.keller@bluewin.ch";
+    
+}
+
+.mail{
+    display: inline;
+}
+
+.logo{
+    display: inline;
+}
+
